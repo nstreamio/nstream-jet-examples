@@ -1,0 +1,54 @@
+# Nstream-Jet Examples
+
+Welcome to the Nstream-Jet Examples repository! 
+This repository contains a collection of example configuration files for Nstream-Jet, demonstrating various features and use cases.
+
+If you have any questions or would like an example added, feel free to raise an issue.
+
+## Table of Contents
+
+- [Examples](#examples)
+  - [App Configuration](#app-configuration)
+  - [Kafka](#kafka)
+  - [Pulsar](#pulsar)
+  - [Relays](#relays)
+  - [Agents and Patches](#agents-and-patches)
+
+
+## Examples
+
+The example files provided are valid configuration files. 
+However, please replace any dummy values with real ones before using them.
+
+The examples are organized into directories, each focusing on a specific aspect of configuration. 
+While some examples may contain additional fields to ensure the file's validity, these fields might not be directly relevant to the particular area being demonstrated.
+
+### App Configuration
+
+Explore basic and application level configuration options.
+
+- [App Configuration](app)
+
+### Kafka
+
+Examples of configuring Kafka as a data source.
+
+- [Kafka Configuration](kafka)
+
+### Pulsar
+
+Examples of configuring Pulsar as a data source.
+
+- [Pulsar Configuration](pulsar)
+
+### Relays
+
+Examples showing how to configure relays to forward incoming data from data sources.
+
+- [Relays](relays)
+
+### Agents and Patches
+
+Examples of configuring agents and applying patches to extend their functionality.
+
+- [Agents and Patches](patches)

@@ -1,0 +1,17 @@
+{
+  "ingress": {
+    "type": "kafka",
+    "settings": {
+      "bootstrapServers": "dummyServer",
+      "topic": "dummy-topic",
+      "groupId": "dummyGroupId",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string"
+    },
+    "relay": {
+      "agent": "site",
+      "idExtractor": "$key",
+      "valueExtractor": "$value.status"
+    }
+  }
+}

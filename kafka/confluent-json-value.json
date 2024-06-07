@@ -1,0 +1,25 @@
+{
+  "ingress": {
+    "type": "confluent",
+    "settings": {
+      "bootstrapServers": "localhost:9092",
+      "topic": "site-topic",
+      "groupId": "nstream-jet",
+      "autoOffset": "latest",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string",
+      "valueContentType": "json",
+      "pollTimeoutMillis": 100,
+      "clusterApiKey": "dumyApiKey",
+      "clusterApiSecret": "dummyApiSecret",
+      "schemaRegistryUrl": "dummySchemaRegistryUrl",
+      "schemaRegistryApiKey": "dummySchemaRegistryApiKey",
+      "schemaRegistryApiSecret": "dummySchemaRegistryApiSecret"
+    },
+    "relay": {
+      "agent": "site",
+      "idExtractor": "$key",
+      "valueExtractor": "$value"
+    }
+  }
+}

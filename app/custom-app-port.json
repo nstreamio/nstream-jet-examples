@@ -1,0 +1,18 @@
+{
+  "app": {
+    "port": 12345
+  },
+  "ingress": {
+    "type": "kafka",
+    "settings":{
+      "bootstrapServers": "dummyServer",
+      "topic": "dummyTopic",
+      "groupId": "dummyGroupId",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string"
+    },
+    "relay": {
+      "agent": "dummy"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "app": {
+    "name": "my-custom-app-name"
+  },
+  "ingress": {
+    "type": "kafka",
+    "settings":{
+      "bootstrapServers": "dummyServer",
+      "topic": "dummyTopic",
+      "groupId": "dummyGroupId",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string"
+    },
+    "relay": {
+      "agent": "dummy"
+    }
+  }
+}

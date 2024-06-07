@@ -1,0 +1,32 @@
+{
+  "ingress": [
+    {
+      "type": "pulsar",
+      "settings": {
+        "serviceUrl": "localhost:9092",
+        "topic": "site-data",
+        "subscriptionName": "nstream-jet",
+        "valueSchema": "string"
+      },
+      "relay": {
+        "agent": "site",
+        "idExtractor": "$key",
+        "valueExtractor": "$value"
+      }
+    },
+    {
+      "type": "pulsar",
+      "settings": {
+        "serviceUrl": "remote:9092",
+        "topic": "site-scores",
+        "subscriptionName": "nstream-jet",
+        "valueSchema": "string"
+      },
+      "relay": {
+        "agent": "site",
+        "idExtractor": "$key",
+        "valueExtractor": "$value"
+      }
+    }
+  ]
+}

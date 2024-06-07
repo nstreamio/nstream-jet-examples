@@ -1,0 +1,38 @@
+{
+  "ingress": [
+    {
+      "type": "kafka",
+      "settings": {
+        "bootstrapServers": "localhost:9092",
+        "topic": "site-data",
+        "groupId": "nstream-jet",
+        "autoOffset": "latest",
+        "keyDeserializer": "integer",
+        "valueDeserializer": "string",
+        "pollTimeoutMillis": 100
+      },
+      "relay": {
+        "agent": "site",
+        "idExtractor": "$key",
+        "valueExtractor": "$value"
+      }
+    },
+    {
+      "type": "kafka",
+      "settings": {
+        "bootstrapServers": "remote:9092",
+        "topic": "site-scores",
+        "groupId": "nstream-jet",
+        "autoOffset": "latest",
+        "keyDeserializer": "integer",
+        "valueDeserializer": "string",
+        "pollTimeoutMillis": 100
+      },
+      "relay": {
+        "agent": "site",
+        "idExtractor": "$key",
+        "valueExtractor": "$value"
+      }
+    }
+  ]
+}

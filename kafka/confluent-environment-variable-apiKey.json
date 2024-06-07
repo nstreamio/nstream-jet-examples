@@ -1,0 +1,24 @@
+{
+  "ingress": {
+    "type": "kafka",
+    "settings": {
+      "bootstrapServers": "localhost:9092",
+      "topic": "site-topic",
+      "groupId": "${env.KAFKA_GROUP_ID}",
+      "autoOffset": "latest",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string",
+      "pollTimeoutMillis": 100,
+      "clusterApiKey": "${env.CONFLUENT_API_KEY}",
+      "clusterApiSecret": "dummyApiSecret",
+      "schemaRegistryUrl": "dummySchemaRegistryUrl",
+      "schemaRegistryApiKey": "dummySchemaRegistryApiKey",
+      "schemaRegistryApiSecret": "dummySchemaRegistryApiSecret"
+    },
+    "relay": {
+      "agent": "site",
+      "idExtractor": "$key",
+      "valueExtractor": "$value"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "ingress": {
+    "type": "kafka",
+    "settings": {
+      "bootstrapServers": "localhost:9092",
+      "topic": "site-topic",
+      "groupId": "nstream-jet",
+      "autoOffset": "latest",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string",
+      "pollTimeoutMillis": 100
+    },
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$id",
+      "valueExtractor": "$",
+      "forEach": "$value.vehicles"
+    }
+  }
+}

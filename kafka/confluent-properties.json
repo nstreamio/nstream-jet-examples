@@ -1,0 +1,11 @@
+{
+  "ingress": {
+    "type": "confluent",
+    "properties": [ "/confluent.properties" ],
+    "relay": {
+      "agent": "site",
+      "idExtractor": "$key",
+      "valueExtractor": "$value"
+    }
+  }
+}

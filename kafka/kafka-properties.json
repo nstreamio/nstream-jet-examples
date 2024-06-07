@@ -1,0 +1,11 @@
+{
+  "ingress": {
+    "type": "kafka",
+    "properties": [ "/kafka.properties" ],
+    "relay": {
+      "agent": "site",
+      "idExtractor": "$key",
+      "valueExtractor": "$value"
+    }
+  }
+}

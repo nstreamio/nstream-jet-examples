@@ -1,0 +1,17 @@
+{
+  "ingress": {
+    "type": "pulsar",
+    "settings": {
+      "serviceUrl": "localhost:9092",
+      "topic": "site-topic",
+      "subscriptionName": "nstream-jet",
+      "valueSchema": "string",
+      "valueContentType": "json"
+    },
+    "relay": {
+      "agent": "site",
+      "idExtractor": "$key",
+      "valueExtractor": "$value"
+    }
+  }
+}
