@@ -5,10 +5,9 @@
       "bootstrapServers": "localhost:9092",
       "topic": "site-topic",
       "groupId": "nstream-jet",
-      "autoOffset": "latest",
       "keyDeserializer": "integer",
       "valueDeserializer": "string",
-      "pollTimeoutMillis": 100
+      "valueContentType": "json"
     },
     "relay": {
       "agent": "vehicle",

@@ -10,9 +10,10 @@
       "valueContentType": "json"
     },
     "relay": {
-      "agent": "site",
-      "idExtractor": "$key",
-      "valueExtractor": "$value.status"
+      "node": "/customPart/site/$key"
     }
+  },
+  "agents": {
+    "uri": "/customPart/site/:siteId"
   }
 }

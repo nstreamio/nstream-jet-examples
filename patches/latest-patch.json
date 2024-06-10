@@ -14,5 +14,9 @@
       "idExtractor": "$key",
       "valueExtractor": "$value.status"
     }
+  },
+  "agent": {
+    "name": "site",
+    "patches": ["latest"]
   }
 }

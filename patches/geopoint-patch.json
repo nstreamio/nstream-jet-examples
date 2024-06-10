@@ -10,9 +10,18 @@
       "valueContentType": "json"
     },
     "relay": {
-      "agent": "site",
-      "idExtractor": "$key",
-      "valueExtractor": "$value.status"
+      "agent": "vehicle",
+      "idExtractor": "$id",
+      "valueExtractor": "$",
+      "forEach": "$value.vehicles"
     }
+  },
+  "agent": {
+    "name": "vehicle",
+    "patches": ["latest", {
+      "type": "geopoint",
+      "longitudeExtractor": "$long",
+      "latitudeExtractor": "$lat"
+    }]
   }
 }

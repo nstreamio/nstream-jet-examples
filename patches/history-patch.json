@@ -12,7 +12,16 @@
     "relay": {
       "agent": "site",
       "idExtractor": "$key",
-      "valueExtractor": "$value.status"
+      "valueExtractor": "$value"
     }
+  },
+  "agent": {
+    "name": "site",
+    "patches": ["latest", {
+      "type": "history",
+      "retentionCount": 10,
+      "keyExtractor": "$timestamp",
+      "valueExtractor": "$status"
+    }]
   }
 }

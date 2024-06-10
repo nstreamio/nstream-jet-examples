@@ -12,7 +12,15 @@
     "relay": {
       "agent": "site",
       "idExtractor": "$key",
-      "valueExtractor": "$value.status"
+      "valueExtractor": "$value"
     }
+  },
+  "agent": {
+    "name": "site",
+    "patches": ["latest", {
+      "type": "group",
+      "groupExtractor": "$country",
+      "groupUriPattern": "/country/:country"
+    }]
   }
 }
