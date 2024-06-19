@@ -1,0 +1,11 @@
+{
+  "ingress": {
+    "type": "activemq",
+    "properties": [ "/jms.properties" ],
+    "relay": {
+      "agent": "message",
+      "idExtractor": "$id",
+      "valueExtractor": "$value"
+    }
+  }
+}

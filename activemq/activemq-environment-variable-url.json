@@ -1,0 +1,14 @@
+{
+  "ingress": {
+    "type": "activemq",
+    "settings": {
+      "brokerURL": "${env.ACTIVEMQ_URL}",
+      "destination": "topic://my-topic"
+    },
+    "relay": {
+      "agent": "message",
+      "idExtractor": "$id",
+      "valueExtractor": "$value"
+    }
+  }
+}

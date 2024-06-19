@@ -1,0 +1,14 @@
+{
+  "ingress": {
+    "type": "activemq",
+    "settings": {
+      "brokerURL": "tcp://host.docker.internal:61616",
+      "destination": "topic://my-topic"
+    },
+    "relay": {
+      "agent": "message",
+      "idExtractor": "$id",
+      "valueExtractor": "$value"
+    }
+  }
+}

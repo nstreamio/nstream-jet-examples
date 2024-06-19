@@ -9,6 +9,7 @@ If you have any questions or would like an example added, feel free to raise an 
 
 - [Examples](#examples)
   - [App Configuration](#app-configuration)
+  - [ActiveMQ](#activemq)
   - [Kafka](#kafka)
   - [Pulsar](#pulsar)
   - [Relays](#relays)
@@ -28,6 +29,12 @@ While some examples may contain additional fields to ensure the file's validity,
 Explore basic and application level configuration options.
 
 - [App Configuration](app)
+
+### ActiveMQ
+
+Examples of configuring ActiveMQ as a data source.
+
+- [ActiveMQ Configuration](activemq)
 
 ### Kafka
 
