@@ -4,7 +4,8 @@
     "settings": {
       "brokerURL": "tcp://host.docker.internal:61616",
       "destination": "topic://my-topic",
-      "contentType": "avro"
+      "contentType": "avro",
+      "avroSchema": "{\"type\": \"record\", \"name\": \"TestObject\", \"fields\": [{\"name\": \"bar\", \"type\": \"string\"}, {\"name\": \"foo\", \"type\": \"int\"}]}"
     },
     "relay": {
       "agent": "message",
