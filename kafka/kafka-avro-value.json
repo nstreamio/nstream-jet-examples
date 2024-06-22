@@ -7,8 +7,7 @@
       "groupId": "nstream-jet",
       "autoOffset": "latest",
       "keyDeserializer": "integer",
-      "valueDeserializer": "string",
-      "valueContentType": "avro",
+      "valueDeserializer": "avro",
       "pollTimeoutMillis": 100
     },
     "relay": {

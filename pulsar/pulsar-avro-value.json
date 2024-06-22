@@ -5,8 +5,7 @@
       "serviceUrl": "localhost:9092",
       "topic": "site-topic",
       "subscriptionName": "nstream-jet",
-      "valueSchema": "string",
-      "valueContentType": "avro"
+      "valueSchema": "avro"
     },
     "relay": {
       "agent": "site",
