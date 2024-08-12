@@ -1,0 +1,11 @@
+{
+  "ingress": {
+    "type": "redis",
+    "properties": ["/config/redis.properties"],
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$value.id",
+      "valueExtractor": "$value"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "ingress": {
+    "type": "redis",
+    "settings": {
+      "host": "host.docker.internal",
+      "port": "6379",
+      "streams": "vehicles 0"
+    },
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$value.id",
+      "valueExtractor": "$value"
+    }
+  }
+}
