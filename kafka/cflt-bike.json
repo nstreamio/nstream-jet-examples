@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "cflt-bike"
+  },
+  "ingress": {
+    "type": "confluent",
+    "settings": {
+      "bootstrapServers" : "TODO: Use your boostrap server url",
+      "clusterApiKey" : "TODO: Use your cluser API key",
+      "clusterApiSecret" : "TODO: Use your cluser API secret",
+      "schemaRegistryUrl" : "TODO: Use your schema registry URL",
+      "schemaRegistryApiKey" : "TODO: Use your schema registry API key",
+      "schemaRegistryApiSecret" : "TODO: Use your schema registry API secret",
+      "topic" : "station_online",
+      "groupId" : "TODO: Use your group id",
+      "keyDeserializer" : "org.apache.kafka.common.serialization.StringDeserializer",
+      "valueDeserializer" : "io.confluent.kafka.serializers.KafkaAvroDeserializer",
+      "pollTimeoutMillis" : 100,
+      "autoOffset" : "earliest"
+    },
+    "relay": {
+      "agent": "station",
+      "idExtractor": "$value.name",
+      "valueExtractor": "$value"
+    }
+  },
+  "agent": {
+    "name": "station",
+    "patches": [
+      "latest",
+      {
+        "type": "geopoint",
+        "valueExtractor": "$availability_ratio"
+      }
+    ]
+  }
+}
