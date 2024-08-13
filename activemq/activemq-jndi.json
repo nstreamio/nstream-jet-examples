@@ -1,0 +1,14 @@
+{
+  "ingress": {
+    "type": "activemq",
+    "settings": {
+      "useJndi": true,
+      "contentType": "json"
+    },
+    "relay": {
+      "agent": "message",
+      "idExtractor": "$id",
+      "valueExtractor": "$value"
+    }
+  }
+}
