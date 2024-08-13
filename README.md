@@ -12,6 +12,7 @@ If you have any questions or would like an example added, feel free to raise an 
   - [ActiveMQ](#activemq)
   - [Kafka](#kafka)
   - [Pulsar](#pulsar)
+  - [Redis](#redis)
   - [Relays](#relays)
   - [Agents and Patches](#agents-and-patches)
 
@@ -47,6 +48,12 @@ Examples of configuring Kafka as a data source.
 Examples of configuring Pulsar as a data source.
 
 - [Pulsar Configuration](pulsar)
+
+### Redis
+
+Examples of configuring Redis Streams as a data source.
+
+- [Redis Configuration](redis)
 
 ### Relays
 
