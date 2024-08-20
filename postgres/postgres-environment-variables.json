@@ -1,0 +1,14 @@
+{
+  "ingress": {
+    "type": "postgres",
+    "settings": {
+      "jdbcUrl": "jdbc:postgresql://host.docker.internal:5432/mydb",
+      "dataSource.user": "${env.POSTGRES_USER}",
+      "dataSource.password": "${env.POSTGRES_PASSWORD}",
+      "channel": "test"
+    },
+    "relay": {
+      "agent": "receiver"
+    }
+  }
+}

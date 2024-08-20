@@ -43,6 +43,12 @@ Examples of configuring Kafka as a data source.
 
 - [Kafka Configuration](kafka)
 
+### Postgres
+
+Examples of configuring Postgres Notify/Listen as a data source.
+
+- [Postgres Configuration](postgres)
+
 ### Pulsar
 
 Examples of configuring Pulsar as a data source.

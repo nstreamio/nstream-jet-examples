@@ -1,0 +1,12 @@
+{
+  "ingress": {
+    "type": "postgres",
+    "properties": "/config/postgres.properties",
+    "settings": {
+      "channel": "test"
+    },
+    "relay": {
+      "agent": "receiver"
+    }
+  }
+}
