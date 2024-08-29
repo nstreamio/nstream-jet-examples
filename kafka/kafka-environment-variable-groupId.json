@@ -4,6 +4,7 @@
     "settings": {
       "bootstrapServers": "localhost:9092",
       "topic": "site-topic",
+      "partitionCount": 4,
       "groupId": "${env.KAFKA_GROUP_ID}",
       "autoOffset": "latest",
       "keyDeserializer": "integer",

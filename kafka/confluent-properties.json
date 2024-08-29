@@ -2,6 +2,9 @@
   "ingress": {
     "type": "confluent",
     "properties": [ "/confluent.properties" ],
+    "settings": {
+      "partitionCount": 4
+    },
     "relay": {
       "agent": "site",
       "idExtractor": "$key",
