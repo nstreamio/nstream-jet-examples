@@ -1,0 +1,39 @@
+{
+  "ingress": {
+    "type": "redis",
+    "settings": {
+      "host": "host.docker.internal",
+      "port": "6379",
+      "streams": "vehicles 0",
+      "group": "nstream",
+      "consumer": "jet",
+      "block": 100,
+      "count": 50,
+      "user": "redisUser",
+      "password": "password",
+      "timeoutMillis": 100,
+      "connectionTimeoutMillis": 101,
+      "socketTimeoutMillis": 102,
+      "blockingSocketTimeoutMillis": 103,
+      "database": 1,
+      "clientName": "nstream",
+      "ssl": true,
+      "caCertPath": "/path/to/cert",
+      "caCertPassword": "caPassword",
+      "userCertPath": "/path/to/user/cert",
+      "userCertPassword": "userPassword",
+      "maxTotal": 8,
+      "maxIdle": 4,
+      "minIdle": 2,
+      "blockWhenExhausted": true,
+      "testWhileIdle": true,
+      "maxWait": 1000,
+      "timeBetweenEvictionRuns": 60000
+    },
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$value.id",
+      "valueExtractor": "$value"
+    }
+  }
+}
