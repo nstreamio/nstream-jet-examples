@@ -1,0 +1,26 @@
+{
+  "app": {
+    "store": {
+      "impl": "RocksDB",
+      "snapshotInterval": 120000,
+      "remoteSnapshotsRoot": "s3://bucket_name/snapshots/",
+      "tag": "nstream-1",
+      "accessKey": "ACCESS_KEY",
+      "secretKey": "SECRET_KEY",
+      "region": "aws-global"
+    }
+  },
+  "ingress": {
+    "type": "kafka",
+    "settings":{
+      "bootstrapServers": "dummyServer",
+      "topic": "dummyTopic",
+      "groupId": "dummyGroupId",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string"
+    },
+    "relay": {
+      "agent": "dummy"
+    }
+  }
+}

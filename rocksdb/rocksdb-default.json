@@ -1,0 +1,18 @@
+{
+  "app": {
+    "store": "RocksDB"
+  },
+  "ingress": {
+    "type": "kafka",
+    "settings":{
+      "bootstrapServers": "dummyServer",
+      "topic": "dummyTopic",
+      "groupId": "dummyGroupId",
+      "keyDeserializer": "integer",
+      "valueDeserializer": "string"
+    },
+    "relay": {
+      "agent": "dummy"
+    }
+  }
+}
