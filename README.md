@@ -15,6 +15,7 @@ If you have any questions or would like an example added, feel free to raise an 
   - [Redis](#redis)
   - [Relays](#relays)
   - [Agents and Patches](#agents-and-patches)
+  - [RocksDB Persistence](#rocksdb-persistence)
 
 
 ## Examples
