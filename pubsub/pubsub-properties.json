@@ -1,0 +1,10 @@
+{
+  "ingress": {
+    "type": "pubsub",
+    "properties": ["/config/pubsub.properties"],
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$id"
+    }
+  }
+}

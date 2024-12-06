@@ -1,0 +1,13 @@
+{
+  "ingress": {
+    "type": "pubsub",
+    "settings": {
+      "projectId": "nstream-vehicles",
+      "subscriptionId": "nstream-vehicle-sub"
+    },
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$id"
+    }
+  }
+}

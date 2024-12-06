@@ -1,0 +1,15 @@
+{
+  "ingress": {
+    "type": "mqtt",
+    "settings": {
+      "serverUri": "localhost:9002",
+      "clientId": "nstream-jet",
+      "topic": "vehicles",
+      "contentType": "json"
+    },
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$id"
+    }
+  }
+}

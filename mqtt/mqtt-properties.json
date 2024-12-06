@@ -1,0 +1,10 @@
+{
+  "ingress": {
+    "type": "mqtt",
+    "properties": ["/config/mqtt.properties"],
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$id"
+    }
+  }
+}

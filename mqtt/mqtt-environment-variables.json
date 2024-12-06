@@ -1,0 +1,15 @@
+{
+  "ingress": {
+    "type": "mqtt",
+    "settings": {
+      "serverUri": "${env.MQTT_HOSTNAME}",
+      "clientId": "${env.MQTT_CLIENT_ID}",
+      "topic": "vehicles",
+      "contentType": "json"
+    },
+    "relay": {
+      "agent": "vehicle",
+      "idExtractor": "$id"
+    }
+  }
+}

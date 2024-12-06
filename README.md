@@ -11,6 +11,9 @@ If you have any questions or would like an example added, feel free to raise an 
   - [App Configuration](#app-configuration)
   - [ActiveMQ](#activemq)
   - [Kafka](#kafka)
+  - [MQTT](#mqtt)
+  - [Postgres](#postgres)
+  - [Google PubSub](#google-pubsub)
   - [Pulsar](#pulsar)
   - [Redis](#redis)
   - [Relays](#relays)
@@ -38,11 +41,23 @@ Examples of configuring ActiveMQ as a data source.
 
 - [ActiveMQ Configuration](activemq)
 
+### Google PubSub
+
+Examples of configuring Google PubSub as a data source.
+
+- [PubSub Configuration](pubsub)
+
 ### Kafka
 
 Examples of configuring Kafka as a data source.
 
 - [Kafka Configuration](kafka)
+
+### MQTT
+
+Examples of configuring MQTT as a data source.
+
+- [MQTT Configuration](mqtt)
 
 ### Postgres
 
